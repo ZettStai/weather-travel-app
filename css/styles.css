@@ -1,0 +1,209 @@
+html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-size: 12px;
+}
+
+h1 {
+  color: #525454;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+hr {
+  background: #d0d7d9;
+  height: 1px;
+  margin: 20px 0 20px 0;
+  border: none;
+}
+
+.container {
+  border: 20px solid #000;
+  border-radius: 8px;
+}
+
+#map {
+  height: calc(100vh - 40px);
+  bottom:0px;
+  width: 100%;
+}
+
+#map.reduced {
+  height: calc(100vh - 40px - 319px);
+}
+
+.no-pad {
+  padding: 0;
+}
+
+#listings-list {
+  padding-left: 20px;
+}
+
+#listings-list a:hover {
+  cursor: pointer;
+  color: #9400d3;
+  text-decoration: none;
+}
+
+#toggle-div {
+  text-align: center;
+}
+
+#toggle-listings {
+  width: 48%;
+}
+
+#filter-div {
+  display: inline;
+}
+
+#filter-input {
+  width: calc(100% - 70px);
+  margin-bottom: 5px;
+}
+
+#filter-label {
+  display: inline;
+  width: 70px;
+  color: #029bc9;
+}
+
+.rsc-btn {
+  width: 210px;
+  font-size: 16px;
+  color: #9400d3;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.rsc-btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background: #9400d3;
+}
+
+#rsc-container {
+  height: 320px;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+}
+
+#rsc-close {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  right: 0;
+  font-size: 18px;
+  margin: 10px 10px 0 0;
+}
+
+#rsc-location-name {
+  padding-left: 5px;
+}
+
+.rsc-body {
+  padding: 10px;
+  background: #fff;
+}
+
+.img-button {
+  font-size: 25px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.img-button:hover {
+  cursor: pointer;
+}
+
+#display-panel {
+  height: 135px;
+  width: 449px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#flickr-list {
+  height: 140px;
+  width: 1550px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 0;
+  list-style: none;
+}
+
+.flickr-img {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.hspace-10 {
+  width: 10px;
+  height: 20px;
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.error {
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.options-box {
+  height: calc(100vh - 40px);
+  overflow: scroll;
+  background: #fff;
+  line-height: 30px;
+  padding: 10px 10px 30px 10px;
+}
+
+.pano {
+  width: 200px;
+  height: 200px;
+}
+
+.text {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 335px) {
+  #display-panel {
+    width: 149px;
+  }
+}
+
+@media screen and (min-width: 336px) and (max-width: 490px) {
+  #display-panel {
+    width: 299px;
+  }
+}

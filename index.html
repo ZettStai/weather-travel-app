@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Travel App</title>
+    <!-- <link type="image/png" href="img/icon.png" rel="shortcut icon"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+	</head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Weather Travel App</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2 padding-none no-pad">
+          <h4>Origin</h4>
+        </div>
+        <div class="col-sm-4 padding-none no-pad">
+          <h4 id="loc-start">...</h4>
+        </div>
+
+        <div class="col-sm-2 padding-none no-pad">
+          <h4>Destination</h4>
+        </div>
+        <div class="col-sm-4 padding-none no-pad">
+          <h4 id="loc-stop">...</h4>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-2 padding-none no-pad">
+          <h4>Departure Time</h4>
+        </div>
+        <div class="col-sm-4 padding-none no-pad">
+          <h4 id="time-start"></h4>
+        </div>
+        <div class="col-sm-2 padding-none no-pad">
+          <h4>Arrival Time</h4>
+        </div>        
+        <div class="col-sm-4 padding-none no-pad">
+          <h4 id="time-stop"></h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2 padding-none no-pad">
+          <h4>Weather:</h4>
+        </div>
+        <div class="col-sm-4 padding-none no-pad">
+          <h4 id="weather-start"></h4>
+        </div>
+        <div class="col-sm-2 padding-none no-pad">
+          <h4>Weather:</h4>
+        </div>
+        <div class="col-sm-4 padding-none no-pad">
+          <h4 id="weather-stop"></h4>
+        </div>
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=API_KEY_HERE&callback=viewModel.init" onerror="mapError()">
+    </script>    
+  </body>
+</html>
+
+
